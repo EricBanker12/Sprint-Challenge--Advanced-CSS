@@ -175,6 +175,7 @@ nav div {
   display: flex;
   justify-content: space-between;
   width: 38rem;
+  max-width: 100%;
 }
 nav div a {
   color: #454A59;
@@ -191,6 +192,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  width: 100%;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -233,6 +238,18 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #22283a;
+  color: white;
+  width: 10rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.8rem;
 }
 .home .walk .walk-img {
   width: 46%;
