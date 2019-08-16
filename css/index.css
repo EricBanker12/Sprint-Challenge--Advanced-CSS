@@ -163,7 +163,9 @@ p {
 nav {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: nowrap;
   width: 100%;
   background-color: #F6F6F6;
 }
@@ -173,7 +175,10 @@ nav h1 {
 }
 nav div {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
   width: 38rem;
   max-width: 100%;
 }
@@ -205,6 +210,9 @@ footer {
 }
 .home .space-images {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -228,7 +236,10 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
 }
 .home .walk .walk-text {
   width: 50%;
@@ -249,7 +260,12 @@ footer {
   line-height: 3.5rem;
   text-align: center;
   border-radius: 5px;
+  border: 1px solid #22283a;
   font-size: 1.8rem;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283a;
+  background-color: white;
 }
 .home .walk .walk-img {
   width: 46%;

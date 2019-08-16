@@ -1,1 +1,32 @@
 // Mixins Here
+.navlink() {
+    color: @nav-font;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.flex(@dir:row,@justify:flex-start,@align:stretch,@wrap:nowrap) {
+    display: flex;
+    flex-direction: @dir; //row;
+    justify-content: @justify; //flex-start;
+    align-items: @align; //stretch;
+    flex-wrap: @wrap; //nowrap;
+}
+
+.mkbtn(@bgcolor:#22283a, @color:white, @width:10rem, @height:3.5rem) {
+    display: inline-block;
+    cursor: pointer;
+    background-color: @bgcolor;
+    color: @color;
+    width: @width;
+    height: @height;
+    line-height: @height;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid @bgcolor;
+    font-size: 1.8rem;
+    &:hover {
+        color: @bgcolor;
+        background-color: @color;
+    }
+}

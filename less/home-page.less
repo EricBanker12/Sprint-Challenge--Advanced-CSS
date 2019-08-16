@@ -20,8 +20,7 @@
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    .flex(@wrap:wrap);
     width: 100%;
 
     img {
@@ -48,8 +47,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex(@justify:center);
 
     .walk-text {
       width: 50%;
@@ -63,16 +61,7 @@
       }
 
       .btn {
-          display: inline-block;
-          cursor: pointer;
-          background-color: #22283a;
-          color: white;
-          width: 10rem;
-          height: 3.5rem;
-          line-height: 3.5rem;
-          text-align: center;
-          border-radius: 5px;
-          font-size: 1.8rem;
+          .mkbtn(#22283a, @width:10rem);
       }
     }
 
